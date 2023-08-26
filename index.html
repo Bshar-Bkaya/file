@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- normalize file -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- the main css file -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- To switch Color -->
+  <link href="css/style-switcher.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- For animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font-awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
+  <title>Bashar Portfolio</title>
+</head>
+
+<body>
+  <div class="overlays first"></div>
+  <div class="overlays second">Bashar Bkaya</div>
+  <div class="overlays third"></div>
+  <div class="nav-toggler">
+    <span></span>
+  </div>
+
+  <!-- start main container-->
+  <div class="main-container">
+    <!-- Start side-->
+    <div class="side">
+      <div class="logo">
+        <a href="#"> <span>B</span>kaya</a>
+      </div>
+
+      <ul class="nav">
+        <li>
+          <a class="link-home active" href="#home"><i class="fa fa-home"></i>Home</a>
+        </li>
+        <li>
+          <a class="link-about" href="#about"><i class="fa fa-user"></i>About</a>
+        </li>
+        <li>
+          <a class="link-service" href="#service"><i class="fa fa-list"></i>Service</a>
+        </li>
+        <li>
+          <a class="link-portfolio" href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+        </li>
+        <li>
+          <a class="link-contact" href="#contact"><i class="fa fa-comments"></i>Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End side-->
+
+    <!-- satrt content-->
+    <div class="content">
+      <!-- start home-->
+      <section class="home section" id="home" data-aos="fade-right" data-aos-duration="3000" data-aos-mirror="true" data-aos-offset="200" data-aos-once="false">
+        <div class="container">
+          <div class="row">
+            <div class="home-info padd-15">
+              <h3 class="hello">
+                Hello My Name Is <span class="name">Bashar Bkaya</span>
+              </h3>
+              <h3 class="my-profession">
+                <span class="typing"></span>
+              </h3>
+              <p>
+                I am an enthusiastic and driven programmer, I love turning ideas into reality through coding. I enjoy
+                analyzing problems
+                and finding creative solutions to them, and I am always excited to learn new techniques and tools that
+                help me improve
+                my skills and develop my capabilities as a programmer. I believe that programming is not just a skill,
+                but an art and a
+                science at the same time, and I always strive to achieve the perfect balance between the two aspects
+                to create excellent
+                and effective software.
+              </p>
+              <a class="btn" href="./file/Bashar's Resume.pdf" download>download CV</a>
+              <div class="go-down"><i class="fas fa-angle-double-down fa-2x"></i></div>
+            </div>
+            <div class="home-image padd-15">
+              <img class="myphoto" src="image/me.png" alt height="300px">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end home-->
+
+      <!--start About-->
+      <section class="about section" id="about" data-aos="fade-left" data-aos-duration="3000" data-aos-mirror="true" data-aos-offset="200" data-aos-once="false">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-content padd-15">
+              <div class="row">
+                <div class="about-text padd-15">
+                  <h3>
+                    Bashar Bkaya, <span>Back End Developer</span>
+                  </h3>
+
+                  <p>
+                    I am from Syria - Aleppo, I am studying in the Faculty of Informatics Engineering Now I am in the
+                    fifth year, I love
+                    technology sciences and making technologies that make our lives easier. In addition to being a web
+                    programmer, I am good
+                    at Arduino programming, and I like the field of the Internet of Things.
+                  </p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="personal-info padd-15">
+                  <div class="row">
+                    <div class="info-item padd-15">
+                      <p>Birthday: <span>2001-11-24</span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>Age: <span id="myage"></span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>Email: <span style="word-wrap: break-word;">bsharbkayt@gmail.com</span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>site: <span style="word-wrap: break-word;">url</span></p>
+                    </div>
+                    <div class="info-item padd-15">
+                      <p>Degree: <span>computer science</span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>Phone: <span>+963 967241186</span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>City: <span>Aleppo</span></p>
+                    </div>
+
+                    <div class="info-item padd-15">
+                      <p>freelance: <span>Available</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="buttons padd-15">
+                      <a class="btn hire-me" href="#contact">
+                        Hire Me
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills padd-15">
+                  <div class="row">
+                    <div class="skills-item padd-15">
+                      <h4>Laravel <span>80%</span></h4>
+                      <div class="progrees">
+                        <div class="progress-in" data-width="80%" style="width: 0"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills-item padd-15">
+                      <h4>Container With Docker <span>70%</span></h4>
+                      <div class="progrees">
+                        <div class="progress-in" data-width="70%" style="width: 0"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills-item padd-15">
+                      <h4>Realtime <span>65%</span></h4>
+                      <div class="progrees">
+                        <div class="progress-in" data-width="65%" style="width: 0"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills-item padd-15">
+                      <h4>Cache and Redis <span>80%</span></h4>
+                      <div class="progrees">
+                        <div class="progress-in" data-width="80%" style="width: 0"></div>
+                      </div>
+                    </div>
+
+                    <div class="skills-item padd-15">
+                      <h4>Design Pattern OOP <span>70%</span></h4>
+                      <div class="progrees">
+                        <div class="progress-in" data-width="70%" style="width: 0"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- timeLineItem-->
+                        <div class="timeline-item">
+                          <div class="cricle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2019 - present
+                          </h3>
+                          <h4 class="timeline-title">
+                            Master in Informatics Engineering
+                          </h4>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus provident voluptates nisi dolorem,
+                            laborios m, voluptatibus inventore enim vel dolor
+                            vero, architecto quia alias quisquam rem?
+                          </p>
+                        </div>
+
+                        <!-- timeLineItem-->
+                        <div class="timeline-item">
+                          <div class="cricle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2013 2015
+                          </h3>
+                          <h4 class="timeline-title">
+                            Master in computer Science
+                          </h4>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus provident voluptates nisi dolorem,
+                            laborios m, voluptatibus inventore enim vel dolor
+                            vero, architecto quia alias quisquam rem?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline-box padd-15">
+                      <div class="timeline shadow-dark">
+                        <!-- timeLineItem-->
+                        <div class="timeline-item">
+                          <div class="cricle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2013 2015
+                          </h3>
+                          <h4 class="timeline-title">
+                            Master in computer Science
+                          </h4>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus provident voluptates nisi dolorem,
+                            laborios m, voluptatibus inventore enim vel dolor
+                            vero, architecto quia alias quisquam rem?
+                          </p>
+                        </div>
+
+                        <!-- timeLineItem-->
+                        <div class="timeline-item">
+                          <div class="cricle-dot"></div>
+                          <h3 class="timeline-date">
+                            <i class="fa fa-calendar"></i>2013 2015
+                          </h3>
+                          <h4 class="timeline-title">
+                            Master in computer Science
+                          </h4>
+                          <p class="timeline-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Natus provident voluptates nisi dolorem,
+                            laborios m, voluptatibus inventore enim vel dolor
+                            vero, architecto quia alias quisquam rem?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end About-->
+
+      <!--======= Start Service=======-->
+      <section class="service section" id="service" data-aos="fade-up" data-aos-duration="3000" data-aos-mirror="true" data-aos-once="false">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Service</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ===== start Service item =======-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-laptop-code"></i>
+                </div>
+                <h4>Blade Template Engine</h4>
+                <p>
+                  make the front end in the blade template engine
+                </p>
+              </div>
+            </div>
+            <!-- ===== End Service item =======-->
+
+            <!-- ===== start Service item =======-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-regular fa-id-card"></i>
+                </div>
+                <h4>Roles and permission</h4>
+                <p>
+                  make site with several types of users with different role and permission.
+                </p>
+              </div>
+            </div>
+            <!-- ===== End Service item =======-->
+
+            <!-- ===== start Service item =======-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-solid fa-memory"></i>
+                </div>
+                <h4>Caching Systems</h4>
+                <p>
+                  make websites faster and get the best performance by using caching.
+                </p>
+              </div>
+            </div>
+            <!-- ===== End Service item =======-->
+
+            <!-- ===== start Service item =======-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-code"></i>
+                </div>
+                <h4>REST and GraphQL API</h4>
+                <p>
+                  An API that returns only specific data in a standardized formatted way for the front.
+                </p>
+              </div>
+            </div>
+            <!-- ===== End Service item =======-->
+
+            <!-- ===== start Service item =======-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fas fa-bolt"></i>
+                </div>
+                <h4>Realtime </h4>
+                <p>
+                  I am dealing with serverless Pusher in real-time
+                </p>
+              </div>
+            </div>
+            <!-- ===== End Service item =======-->
+
+            <!-- ===== start Service item =======-->
+            <div class="service-item padd-15">
+              <div class="service-item-inner">
+                <div class="icon">
+                  <i class="fa fa-solid fa-language"></i>
+                </div>
+                <h4>Multilanguage</h4>
+                <p>
+                  I can make Multilingual website.
+                </p>
+              </div>
+            </div>
+            <!-- ===== End Service item =======-->
+          </div>
+        </div>
+      </section>
+      <!--======= End Service  =======-->
+
+      <!--======= Start protoflio  =======-->
+
+      <section class="portfolio section" id="portfolio" data-aos="fade-up-left" data-aos-duration="3000" data-aos-mirror="true" data-aos-once="false">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portfolio-heading padd-15">
+              <h2>My Last Projects :</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- ===== portfolio item Start=====-->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="image/schoole2.png" alt>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End=====-->
+
+            <!-- ===== portfolio item Start=====-->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="image/invoice1.png" alt>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End=====-->
+
+            <!-- ===== portfolio item Start=====-->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <a href="https://documenter.getpostman.com/view/19782963/2s93CEvFtt">
+                    <img src="image/invoice12.png" alt>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End=====-->
+            
+            <!-- ===== pportfolio item Statr===== -->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="image/schoole1.png" alt>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End===== -->
+
+            <!-- ===== portfolio item Start=====-->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="image/invoice11.png" alt>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End===== -->
+
+            <!-- ===== portfolio item Start=====-->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="image/invoice112.png" alt>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End===== -->
+
+            <!-- ===== portfolio item Start=====-->
+            <div class="portfolio-item padd-15">
+              <div class="protfolio-item-inner shadow-dark">
+                <div class="portfolio-img">
+                  <img src="image/mmstore1.png" alt>
+                </div>
+              </div>
+            </div>
+            <!-- ===== portfolio item End===== -->
+          </div>
+        </div>
+      </section>
+      <!--======= End protoflio  =======-->
+
+      <!--======= start contact=======-->
+      <section class="contact section" id="contact" data-aos="fade-down-right" data-aos-duration="3000" data-aos-mirror="true" data-aos-once="false">
+        <div class="container">
+          <div class="row">
+            <div class="section-title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
+          <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+          <div class="row">
+            <!-- ==== contact start====-->
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Call Us On</h4>
+              <p>+963 967241186</p>
+            </div>
+            <!-- ==== contact End====-->
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4>Office</h4>
+              <p>Aleppo</p>
+            </div>
+            <!-- ==== contact End====-->
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>bsharbkayt@gmail.com</p>
+            </div>
+            <!-- ==== contact End====-->
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-globe-europe"></i></div>
+              <h4>WebSite</h4>
+              <p>url</p>
+            </div>
+            <!-- ==== contact End====-->
+          </div>
+
+          <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact-sub-title padd-15">
+            I'M VERY RESPOSIVE TO MESSAGES
+          </h4>
+          <!-- ===== Contact Form-->
+          <div class="row">
+            <div class="conatct-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Name">
+                  </div>
+                </div>
+
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Subject">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea class="form-control" id name placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button class="btn" type="submit" onclick="window.location.href = 'mailto:bsharbkayt@gmail.com';">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--======= End contact=======-->
+    </div>
+    <!-- end content-->
+  </div>
+  <!-- end main container-->
+
+  <!-- ==== Style Switcher Start ====-->
+  <div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+      <i class="fas fa-moon"></i>
+    </div>
+    <h4>Them color</h4>
+    <div class="colors">
+      <span class="color color-cycle" data-color="#ec1839"></span>
+      <span class="color2 color-cycle" data-color="#fa5b0f"></span>
+      <span class="color3 color-cycle" data-color="#37b182"></span>
+      <span class="color4 color-cycle" data-color="#1854b4"></span>
+      <span class="color5 color-cycle" data-color="#f021b2"></span>
+    </div>
+  </div>
+  <!-- ==== Style Switcher End ====-->
+
+  <!-- ########## All Scripts ########## -->
+  <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+  <!-- For auto typing -->
+  <!-- <script src="Js/typed.min.js.map"></script> -->
+  <!-- For change color -->
+  <script src="Js/style-switcher.js"></script>
+  <!-- This library for animations you’ll provide to your HTML elements -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- For animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <!-- Main JS-->
+  <script src="Js/index.js"></script>
+</body>
+
+</html>
