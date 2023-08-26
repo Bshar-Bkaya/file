@@ -764,6 +764,7 @@ h3.my-profession {
 .portfolio .portfolio-heading h2 {
   font-weight  : 500;
   color        : var(--text-black-900);
+  margin:   0;
 }
 
 .portfolio .portfolio-item {
